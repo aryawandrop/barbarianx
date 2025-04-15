@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Site Under Maintenance</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    body {
+      height: 100vh;
+      background: linear-gradient(135deg, #0f2027, #203a43, #2c5364);
+      color: white;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-direction: column;
+      overflow: hidden;
+    }
+    .logo-container {
+      margin-bottom: 30px;
+      animation: fadeIn 2s ease-in-out;
+    }
+    .logo-container img {
+      max-width: 200px;
+      height: auto;
+    }
+    h1 {
+      font-size: 2.5rem;
+      margin-bottom: 10px;
+      animation: slideInDown 1.5s ease-in-out;
+    }
+    p {
+      font-size: 1.2rem;
+      animation: slideInUp 2s ease-in-out;
+    }
+    .spinner {
+      margin-top: 40px;
+      border: 6px solid rgba(255, 255, 255, 0.2);
+      border-top: 6px solid #fff;
+      border-radius: 50%;
+      width: 60px;
+      height: 60px;
+      animation: spin 1s linear infinite;
+    }
+    @keyframes fadeIn {
+      from { opacity: 0; }
+      to { opacity: 1; }
+    }
+    @keyframes slideInDown {
+      from { transform: translateY(-100px); opacity: 0; }
+      to { transform: translateY(0); opacity: 1; }
+    }
+    @keyframes slideInUp {
+      from { transform: translateY(100px); opacity: 0; }
+      to { transform: translateY(0); opacity: 1; }
+    }
+    @keyframes spin {
+      0% { transform: rotate(0deg); }
+      100% { transform: rotate(360deg); }
+    }
+  </style>
+</head>
+<body>
+  <div class="logo-container">
+    <!-- Ganti src ini dengan URL logo kamu -->
+    <img src="logo-kamu.png" alt="Logo Kamu">
+  </div>
+  <h1>Site Under Maintenance</h1>
+  <p>We'll be back with a better experience soon. Thank you for your patience!</p>
+  <div class="spinner"></div>
+</body>
+</html>
